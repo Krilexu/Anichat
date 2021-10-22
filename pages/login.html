@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Login Form Tutorial</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap%27');
+		.login-form {
+			
+
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+
+		.login-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+
+		.login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+
+		.signup {
+			width: 80%;
+			margin-top: 20px;
+			margin-left: 30px;
+			padding: 15px;
+			background-color: #535b63;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+
+		.checkbox {
+			position: relative;
+			right: 140px;
+			top: 22px;
+		}
+
+		.chckbox {
+			position: relative;
+			left: 37px;
+			content: "";
+			display: block;
+			width: 12px;
+			height: 12px;
+			border: 1px solid #dddddd;
+			border-width: 2px 2px 2px 2px;
+		}
+
+		.login {
+			position: relative;
+			bottom: 18px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href=/# class="logo"> <h1>Anichat</h1> </a>
+
+	<div class="login-form">
+		<h1>Login Page</h1>
+		<form action="auth" method="POST">
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<div class="checkbox">
+				<input type="checkbox" id="remb" name="remb" value="remb" class="chckbox">
+				<label for="remb">Remember me</label><br>
+			</div>
+			<div class="login">
+				<input type="submit" placeholder="Login" value="Login">
+				<button type="button" onclick="location.href = '/signup';" class="signup">Don't have an
+					Account?</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>
